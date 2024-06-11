@@ -77,7 +77,7 @@ func getProjectInfo(gid string) []byte {
 }
 
 func doRequest(url string) []byte {
-	bearer := "Bearer 2/1207527720536398/1207527735271853:7039039c59e186dd866ed29ea41d7641"
+	bearer := "Bearer {your_token_here}"
 
 	req, err := http.NewRequest("GET", url, nil)
 	req.Header.Add("Authorization", bearer)
